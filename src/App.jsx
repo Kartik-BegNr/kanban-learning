@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Logo from "./components/Logo.jsx";
 
-export default function App(){
-  return(
+export default function App() {
+  return (
     <div>
-      <h1 className="text-2xl font-bold text-center mt-8">Hello Kanban</h1>
+      <h1>Kanban Board</h1>
+      <Logo />
     </div>
-  )
+  );
 }
