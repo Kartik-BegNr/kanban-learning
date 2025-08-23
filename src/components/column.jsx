@@ -1,16 +1,10 @@
-export default function Column({ title }) {
+export default function Column({ title, children }) {
   return (
-    <section
-      style={{
-        background: "#f9fafb",
-        padding: "1rem",
-        borderRadius: "12px",
-        border: "1px solid #e5e7eb",
-        minHeight: "200px",
-      }}
-    >
-      <h2 style={{ fontWeight: "bold", marginBottom: "1rem" }}>{title}</h2>
-      {/* tasks will go here later */}
+    <section className="bg-zinc-50 p-4 rounded-2xl border border-zinc-200 min-h-[200px]">
+      <h2 className="font-semibold mb-3">{title}</h2>
+      <div className="flex flex-col gap-3">
+        {children}
+      </div>
     </section>
   );
 }
